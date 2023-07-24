@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) 6fr;
+}
+
+.sidebar {
+  background-color: blue;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(200px, 1fr) 4fr; 
+}
+
+.header {
+  background-color: white;
+}
+
+.dashboard {
+  background-color: grey;
+}
