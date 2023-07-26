@@ -1,5 +1,10 @@
-body {
+body
+p {
   margin: 0;
+  padding: 0;
+}
+
+body {
   height: 100vh;
   display: grid;
   grid-template-columns: minmax(200px, 1fr) 6fr;
@@ -7,6 +12,19 @@ body {
 
 .sidebar {
   background-color: blue;
+  color: white;
+  font-size: 2rem;
+  display: grid;
+  align-content: start;
+  gap: 2em;
+}
+
+.sidebar-logo h3 {
+  display: inline;
+}
+
+.sidebar img {
+  height: 1em;
 }
 
 .main {
@@ -17,6 +35,42 @@ body {
 
 .header {
   background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  font-size: 2rem;
+  align-items: center;
+}
+
+.header .search-bar {
+  grid-column: 1 / 3;
+}
+
+.header .profile-info {
+  display:grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header .profile-header {
+  grid-column: 1/3;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.profile-header img {
+  grid-row: 1/3;
+  justify-self: center;
+}
+
+.user-name-handle p {
+  display: inline;
+}
+
+.header-buttons {
+  align-self: space-between;
 }
 
 .dashboard {
