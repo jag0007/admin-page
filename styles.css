@@ -1,5 +1,6 @@
-body
-p {
+body,
+p,
+h3 {
   margin: 0;
   padding: 0;
 }
@@ -13,20 +14,40 @@ body {
 .sidebar {
   background-color: blue;
   color: white;
-  font-size: 1rem;
+  font-size: 1em;
   display: grid;
   align-content: start;
-  gap: 1em;
-}
-
-.sidebar-logo h3 {
-  display: inline;
+  gap: 2em;
+  padding: 1em;
 }
 
 .sidebar img {
   height: 1em;
 }
 
+.sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidebar-logo img {
+  height: 1em;
+}
+
+.sidebar-logo {
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: 1em 1fr;
+  align-items: center;
+  gap: .5rem;
+}
+
+.nav-link {
+  display: grid;
+  grid-template-columns: 1em 1fr;
+  gap: .5em;
+
+}
 
 .main {
   display: grid;
@@ -39,8 +60,9 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  font-size: 1rem;
   align-items: center;
+  gap: .5em;
+  padding: .5em;
 }
 
 .header .search-bar {
@@ -51,10 +73,42 @@ body {
   height: 1em;
 }
 
+.search-bar {
+  display:grid;
+  grid-template-columns: 1em 1fr;
+}
+
+.search-bar input {
+  appearance: none;
+  border-radius: 15px;
+  background-color: lightgray;
+}
+
+.search-bar img {
+  height: 1em;
+}
+
+.icon {
+  height: 1em;
+}
+
+.header-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1em;
+}
+
+.header-buttons button {
+  border-radius: 15px;
+  background-color: blue;
+  color: white;
+}
+
 .header .profile-info {
   display:grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-items: end;
 }
 
 .header .profile-header {
